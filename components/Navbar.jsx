@@ -14,17 +14,7 @@ const Navbar = () => (
       </Flex>
     </Box>
     <Spacer />
-    <Box>
-      <Menu>
-        <MenuButton as={IconButton} colorScheme='blue' padding='0 5 0 5' marginRight='2'>
-          About Developer
-        </MenuButton>
-        <MenuList>
-          <Box paddingLeft='3' fontWeight="bold" fontSize='20'>Ali Shoaib</Box>
-        </MenuList>
-      </Menu>
-    </Box>
-    <Box>
+    <Box marginTop='1'>
       <Menu>
         <MenuButton as={IconButton} icon={<FcMenu />} color='white' />
         <MenuList>
@@ -40,6 +30,15 @@ const Navbar = () => (
           <Link href='/search?purpose=for-rent' passHref>
             <MenuItem icon={<FiKey />}>Rent Property</MenuItem>
           </Link>
+          <Menu>
+            <MenuButton as={IconButton} colorScheme='blue' marginTop='1' marginLeft='3' padding='0 5 0 5' marginRight='2'>
+              About Developer
+            </MenuButton>
+            <MenuList marginTop='1'>
+              <Box paddingLeft='3'>Developed by</Box>
+              <Box paddingLeft='3' fontWeight="bold" fontSize='20'>Ali Shoaib</Box>
+            </MenuList>
+        </Menu>
         </MenuList>
       </Menu>
     </Box>
